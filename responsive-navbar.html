@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive-navbar</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="responsive-navbar.css">
+   
+</head>
+<body>
+
+  <!-- ------------------------------------------------ -->
+  <nav class="Navbar">
+    <a href="#" id="toggle" class="Toggle Navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+      <span></span>
+    </a>
+    
+    
+    <div id="navbarCollapse" class="Navbar-menu">
+
+
+      <ul class="Navbar-menu-major">
+        <li><a href="#link">Gear</a></li>
+        <li><a href="#link">Music</a></li>
+        <li><a href="#link">Travel</a></li>
+        <li><a href="#link">Photography</a></li>
+      </ul>
+
+
+    </div><!-- navbarCollapse -->
+  </nav>
+  <!-- ------------------------------------------------ -->
+  
+
+      <script>
+        $('#toggle').click(function() {
+            $(this).toggleClass('is-active');
+            $('#navbarCollapse').toggleClass('is-active');
+        });
+      </script>
+</body>
+</html>
